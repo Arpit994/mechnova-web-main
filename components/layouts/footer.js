@@ -64,7 +64,7 @@ function Footer() {
             <div className="hidden md:block"/>
             <div className="hidden md:block"/>
             <div className="text-center md:text-left text-gray-700 text-base mb-4 md:mb-0">
-                <div>© {new Date().getFullYear()} MechNova12. {t('footer.allRightsReserved')}</div>
+                <div>© {new Date().getFullYear()} MechNova. {t('footer.allRightsReserved')}</div>
             </div>
             <div className="flex flex-row gap-2 sm:gap-4 text-sm text-gray-600">
                 <Link href="/privacy" className="hover:text-[#005FA3] transition">
