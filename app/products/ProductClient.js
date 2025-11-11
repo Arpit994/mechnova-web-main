@@ -3,6 +3,7 @@ import Footer from '@/components/layouts/footer'
 import Header from '@/components/layouts/header'
 import categoryDataEs from './category-es.json'
 import categoryDataEn from './category-en.json'
+import categoryDataHi from './category-hi.json'
 import Link from 'next/link'
 import { useTranslation } from '@/lib/useTranslation'
 
@@ -22,7 +23,7 @@ export default function ProdPage() {
   const { t, locale } = useTranslation()
   
   // Conditionally load category data based on language
-  const categoryData = locale === 'en' ? categoryDataEn : categoryDataEs
+  const categoryData = locale === 'en' ? categoryDataEn : locale === 'es' ? categoryDataEs : categoryDataHi;
   
   // Convert categoryData to array and sort by id
   const categories = Object.entries(categoryData)
